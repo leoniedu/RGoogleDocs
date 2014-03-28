@@ -536,7 +536,8 @@ parseAuth =
 #  We need the auth.
 
 function(ans)
-{
+{ 
+  print(ans)
   x = unlist(strsplit(ans, "\\\n"))
   tmp = strsplit(x, "=")
   structure(sapply(tmp, `[`, 2), names = sapply(tmp, `[`, 1)) 
